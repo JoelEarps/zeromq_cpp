@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  zeromq:
+    image: zeromq_build_env
+    privileged: true
+    environment:
+      - PATH=../_build/lib:$PATH
+    build:
+      context: ../
+      dockerfile: ./infra/Dockerfile
+    volumes:
+      - ../:/code
+      - ~/.ssh:/root/.ssh

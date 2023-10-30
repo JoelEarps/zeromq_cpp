@@ -1,0 +1,22 @@
+{
+  "name": "ZeroMQ_DevContainer",
+
+  "dockerComposeFile": "../infra/docker-compose.yml",
+
+  "service": "zeromq",
+
+  "workspaceFolder": "/code/",
+
+  "overrideCommand": true,
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cpptools",
+        "matepek.vscode-catch2-test-adapter"
+      ]
+    }
+  }
+}
